@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLTransportSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'LLTransportSDK provide local QRCode-ride business'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LLTransportSDK/Classes/**/*'
+  #s.source_files = 'LLTransportSDK/Classes/**/*'
   #s.resource = 'LLTransportSDK/Assets/LLTransport.bundle'
   s.vendored_frameworks = 'LLTransportSDK/Frameworks/LLTransportSDK.framework'
   # s.public_header_files = 'Pod/Classes/**/*.h'
