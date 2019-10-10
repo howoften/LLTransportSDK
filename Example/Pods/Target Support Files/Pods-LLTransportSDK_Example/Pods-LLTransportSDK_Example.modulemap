@@ -1,0 +1,6 @@
+framework module Pods_LLTransportSDK_Example {
+  umbrella header "Pods-LLTransportSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

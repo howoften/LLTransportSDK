@@ -1,0 +1,6 @@
+framework module LLTransportSDK {
+  umbrella header "LLTransportSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
