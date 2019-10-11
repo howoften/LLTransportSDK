@@ -240,7 +240,7 @@
 		2B446E1272EDDCDBF3AD42F30F002D93 /* LLTransportSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LLTransportSDK-Info.plist"; sourceTree = "<group>"; };
 		2C9C38506E3157E1EE085E02FC2E012E /* LLTransportSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LLTransportSDK.modulemap; sourceTree = "<group>"; };
 		2CA202499B80D918BAB19AF237B04BE6 /* Pods-LLTransportSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LLTransportSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		2D16BC00234F2C6C005AB6F2 /* LLTransportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LLTransportSDK.framework; sourceTree = "<group>"; };
+		2DBC339923504ECE0084F73E /* LLTransportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LLTransportSDK.framework; sourceTree = "<group>"; };
 		32F5E14FBEFE05B5ADB10088D1CFF9EA /* Pods-LLTransportSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLTransportSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		35059A0EF5EB9A24DACE1FA3F425FA44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		36B5A065E4A79F2D355AB367B95A3E36 /* LLTransportSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLTransportSDK-umbrella.h"; sourceTree = "<group>"; };
@@ -491,7 +491,7 @@
 		2D16BBFF234F2C6C005AB6F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D16BC00234F2C6C005AB6F2 /* LLTransportSDK.framework */,
+				2DBC339923504ECE0084F73E /* LLTransportSDK.framework */,
 			);
 			name = Frameworks;
 			path = LLTransportSDK/Frameworks;

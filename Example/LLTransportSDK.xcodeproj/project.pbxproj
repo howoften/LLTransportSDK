@@ -11,6 +11,11 @@
 		2D0FA36F233CC9A0003DBE02 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FA36E233CC9A0003DBE02 /* timg.jpeg */; };
 		2D62A1D6234C25DF00E1C5C1 /* tab_code01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D62A1D4234C25DF00E1C5C1 /* tab_code01@2x.png */; };
 		2D62A1D7234C25DF00E1C5C1 /* tab_code01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D62A1D5234C25DF00E1C5C1 /* tab_code01@3x.png */; };
+		2DBC338D23502F340084F73E /* LNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC338C23502F340084F73E /* LNavigationController.m */; };
+		2DBC339523504DDB0084F73E /* xm_home_icon_wod@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC339123504DDB0084F73E /* xm_home_icon_wod@3x.png */; };
+		2DBC339623504DDC0084F73E /* xm_home_icon_shouye_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC339223504DDB0084F73E /* xm_home_icon_shouye_sel@2x.png */; };
+		2DBC339723504DDC0084F73E /* xm_home_icon_shouye_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC339323504DDB0084F73E /* xm_home_icon_shouye_sel@3x.png */; };
+		2DBC339823504DDC0084F73E /* xm_home_icon_wod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC339423504DDB0084F73E /* xm_home_icon_wod@2x.png */; };
 		2DE94BE7233DB29300AC7DE6 /* PgyUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE94BE5233DB29200AC7DE6 /* PgyUpdate.framework */; };
 		2DE94BE8233DB29300AC7DE6 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE94BE6233DB29300AC7DE6 /* PgySDK.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -47,6 +52,12 @@
 		2D0FA36E233CC9A0003DBE02 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		2D62A1D4234C25DF00E1C5C1 /* tab_code01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_code01@2x.png"; sourceTree = "<group>"; };
 		2D62A1D5234C25DF00E1C5C1 /* tab_code01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_code01@3x.png"; sourceTree = "<group>"; };
+		2DBC338B23502F340084F73E /* LNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNavigationController.h; sourceTree = "<group>"; };
+		2DBC338C23502F340084F73E /* LNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNavigationController.m; sourceTree = "<group>"; };
+		2DBC339123504DDB0084F73E /* xm_home_icon_wod@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xm_home_icon_wod@3x.png"; sourceTree = "<group>"; };
+		2DBC339223504DDB0084F73E /* xm_home_icon_shouye_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xm_home_icon_shouye_sel@2x.png"; sourceTree = "<group>"; };
+		2DBC339323504DDB0084F73E /* xm_home_icon_shouye_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xm_home_icon_shouye_sel@3x.png"; sourceTree = "<group>"; };
+		2DBC339423504DDB0084F73E /* xm_home_icon_wod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xm_home_icon_wod@2x.png"; sourceTree = "<group>"; };
 		2DE94BE5233DB29200AC7DE6 /* PgyUpdate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PgyUpdate.framework; sourceTree = "<group>"; };
 		2DE94BE6233DB29300AC7DE6 /* PgySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PgySDK.framework; sourceTree = "<group>"; };
 		3696432792345C5A0A08D389 /* LLTransportSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLTransportSDK.podspec; path = ../LLTransportSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -115,6 +126,10 @@
 				2D0FA36E233CC9A0003DBE02 /* timg.jpeg */,
 				2D62A1D4234C25DF00E1C5C1 /* tab_code01@2x.png */,
 				2D62A1D5234C25DF00E1C5C1 /* tab_code01@3x.png */,
+				2DBC339223504DDB0084F73E /* xm_home_icon_shouye_sel@2x.png */,
+				2DBC339323504DDB0084F73E /* xm_home_icon_shouye_sel@3x.png */,
+				2DBC339423504DDB0084F73E /* xm_home_icon_wod@2x.png */,
+				2DBC339123504DDB0084F73E /* xm_home_icon_wod@3x.png */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LLTransportSDK */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -151,6 +166,8 @@
 			children = (
 				6003F59C195388D20070C39A /* LLAppDelegate.h */,
 				6003F59D195388D20070C39A /* LLAppDelegate.m */,
+				2DBC338B23502F340084F73E /* LNavigationController.h */,
+				2DBC338C23502F340084F73E /* LNavigationController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LViewController.h */,
 				6003F5A6195388D20070C39A /* LViewController.m */,
@@ -300,10 +317,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D62A1D7234C25DF00E1C5C1 /* tab_code01@3x.png in Resources */,
+				2DBC339823504DDC0084F73E /* xm_home_icon_wod@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				2D0FA36F233CC9A0003DBE02 /* timg.jpeg in Resources */,
+				2DBC339523504DDB0084F73E /* xm_home_icon_wod@3x.png in Resources */,
+				2DBC339723504DDC0084F73E /* xm_home_icon_shouye_sel@3x.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				2DBC339623504DDC0084F73E /* xm_home_icon_shouye_sel@2x.png in Resources */,
 				2D62A1D6234C25DF00E1C5C1 /* tab_code01@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -415,6 +436,7 @@
 			files = (
 				6003F59E195388D20070C39A /* LLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LViewController.m in Sources */,
+				2DBC338D23502F340084F73E /* LNavigationController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

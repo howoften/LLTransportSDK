@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = [NSString stringWithFormat:@"%@-%@", [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"], [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     
@@ -53,14 +53,32 @@
 //    }
 //    @try {
 //        model.alipayURLScheme = @"alipay2018121762573161";
-//        UINavigationController *nav = [LLTransportSDK constructTransportSDKRootViewControllerWithConfigModel:model];
-//        nav.tabBarItem.title = @"南通乘车码";
-//        nav.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_code01"];
-//        nav.tabBarItem.image = [UIImage imageNamed:@"tab_code01"];
 //        UITabBarController *tab = [[UITabBarController alloc] init];
-//        [tab addChildViewController:nav];
-//        tab.modalPresentationStyle = UIModalPresentationFullScreen;
 //
+//        UINavigationController *nav1 = [LLTransportSDK constructTransportSDKRootViewControllerWithConfigModel:model];
+//        nav1.tabBarItem.title = @"南通乘车码";
+//        nav1.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_code01"];
+//        nav1.tabBarItem.image = [UIImage imageNamed:@"tab_code01"];
+//
+//        UIViewController *vc2 = [UIViewController new];
+//        vc2.view.backgroundColor = [UIColor lightGrayColor];
+//        UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+//        nav2.tabBarItem.title = @"首页";
+//        nav2.tabBarItem.selectedImage = [UIImage imageNamed:@"xm_home_icon_shouye_sel"];
+//        nav2.tabBarItem.image = [UIImage imageNamed:@"xm_home_icon_shouye_sel"];
+//
+//        UIViewController *vc3 = [UIViewController new];
+//        vc3.view.backgroundColor = [UIColor orangeColor];
+//        UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:vc3];
+//        nav3.tabBarItem.title = @"我的";
+//        nav3.tabBarItem.selectedImage = [UIImage imageNamed:@"xm_home_icon_wod"];
+//        nav3.tabBarItem.image = [UIImage imageNamed:@"xm_home_icon_wod"];
+//
+////        [tab addChildViewController:nav2];
+////        [tab addChildViewController:nav1];
+////        [tab addChildViewController:nav3];
+//        tab.viewControllers = @[nav2, nav1, nav3];
+//        tab.modalPresentationStyle = UIModalPresentationFullScreen;
 //        [self.navigationController presentViewController:tab animated:YES completion:nil];
 //    } @catch (NSException *exception) {
 //        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"error" message:exception.description preferredStyle:UIAlertControllerStyleAlert];
@@ -105,6 +123,15 @@
 //
 //         [self.navigationController presentViewController:alert animated:YES completion:nil];
 //     }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if (@available(iOS 13.0, *)) {
+        return UIStatusBarStyleDarkContent;
+    } else {
+
+        return UIStatusBarStyleDefault;
+    }
 }
 
 - (void)didReceiveMemoryWarning
