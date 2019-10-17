@@ -22,5 +22,8 @@
 
 
 
++ (void)switchLLTransportSDKToProduct:(BOOL)isProduct;//default is true
+
+
 @end
 
