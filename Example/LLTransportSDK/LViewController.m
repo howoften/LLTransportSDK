@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *linkTopTF;
 @property (weak, nonatomic) IBOutlet UITextField *linkBottomTF;
 @property (weak, nonatomic) IBOutlet UISwitch *envir_switch;
-
+@property (weak, nonatomic) IBOutlet UILabel *envirState;
 @end
 
 @implementation LViewController
@@ -30,29 +30,36 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = [NSString stringWithFormat:@"%@-%@", [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"], [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     
-//    [LLTransportSDK switchLLTransportSDKToProduct:YES];
+//    [LLTransportSDK switchLLTransportSDKToProduct:NO];
 }
 
 - (IBAction)embed:(id)sender {
-//    LLTransportLaunchModel *model = [LLTransportLaunchModel new];
-//    if (self.phoneTF.text.length > 0) {
-//        model.phone = self.phoneTF.text;
-//    }else {
-//        model.phone = self.phoneTF.placeholder;
-//    }
-//    if (self.themeTF.text.length > 0) {
-//        model.themeColor = self.themeTF.text;
-//    }
+//  LLTransportLaunchModel *model = [LLTransportLaunchModel new];
+//          if (self.phoneTF.text.length > 0) {
+//            model.phone = self.phoneTF.text;
+//        }else {
+//            model.phone = self.phoneTF.placeholder;
+//        }
+//        if (self.themeTF.text.length > 0) {
+//            model.themeColor = self.themeTF.text;
+//        }else {
+//            model.themeColor = self.themeTF.placeholder;
+//        }
 //    //    model.bannerTop = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
 //    //    model.bannerBottom = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
-//    model.bannerTop = self.topBanner.text;
-//    model.bannerBottom = self.bottomBanner.text;
-//    if (self.linkTopTF.text.length > 0) {
-//        model.linkTop = self.linkTopTF.text;
-//    }
-//    if (self.linkBottomTF.text.length > 0) {
-//        model.linkBottom = self.linkBottomTF.text;
-//    }
+//        model.bannerTop = self.topBanner.text;
+//        model.bannerBottom = self.bottomBanner.text;
+//        if (self.linkTopTF.text.length > 0) {
+//            model.linkTop = self.linkTopTF.text;
+//        }else {
+//            model.linkTop = self.linkTopTF.placeholder;
+//        }
+//        if (self.linkBottomTF.text.length > 0) {
+//            model.linkBottom = self.linkBottomTF.text;
+//        }else {
+//            model.linkBottom = self.linkBottomTF.placeholder;
+//        }
+//
 //    @try {
 //        model.alipayURLScheme = @"alipay2018121762573161";
 //        UITabBarController *tab = [[UITabBarController alloc] init];
@@ -76,9 +83,9 @@
 //        nav3.tabBarItem.selectedImage = [UIImage imageNamed:@"xm_home_icon_wod"];
 //        nav3.tabBarItem.image = [UIImage imageNamed:@"xm_home_icon_wod"];
 //
-//        //        [tab addChildViewController:nav2];
-//        //        [tab addChildViewController:nav1];
-//        //        [tab addChildViewController:nav3];
+////        [tab addChildViewController:nav2];
+////        [tab addChildViewController:nav1];
+////        [tab addChildViewController:nav3];
 //        tab.viewControllers = @[nav2, nav1, nav3];
 //        tab.modalPresentationStyle = UIModalPresentationFullScreen;
 //        [self.navigationController presentViewController:tab animated:YES completion:nil];
@@ -89,47 +96,55 @@
 //
 //        [self.navigationController presentViewController:alert animated:YES completion:nil];
 //    }
-//
+    
 }
 
 
 - (IBAction)present:(UIButton *)sender {
-    
+
 //    LLTransportLaunchModel *model = [LLTransportLaunchModel new];
-//    if (self.phoneTF.text.length > 0) {
+//      if (self.phoneTF.text.length > 0) {
 //        model.phone = self.phoneTF.text;
 //    }else {
 //        model.phone = self.phoneTF.placeholder;
 //    }
 //    if (self.themeTF.text.length > 0) {
 //        model.themeColor = self.themeTF.text;
+//    }else {
+//        model.themeColor = self.themeTF.placeholder;
 //    }
-//    //    model.bannerTop = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
-//    //    model.bannerBottom = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
+////    model.bannerTop = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
+////    model.bannerBottom = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
 //    model.bannerTop = self.topBanner.text;
 //    model.bannerBottom = self.bottomBanner.text;
 //    if (self.linkTopTF.text.length > 0) {
 //        model.linkTop = self.linkTopTF.text;
+//    }else {
+//        model.linkTop = self.linkTopTF.placeholder;
 //    }
 //    if (self.linkBottomTF.text.length > 0) {
 //        model.linkBottom = self.linkBottomTF.text;
+//    }else {
+//        model.linkBottom = self.linkBottomTF.placeholder;
 //    }
-//    @try {
-//        model.alipayURLScheme = @"alipay2018121762573161";
-//        model.wechatURLScheme = @"wx86e28a9748b03984";
-//        [LLTransportSDK launchTransportSDKFromSourceViewController:self.navigationController configModel:model];
-//    } @catch (NSException *exception) {
-//        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"error" message:exception.description preferredStyle:UIAlertControllerStyleAlert];
-//        UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-//        [alert addAction:sure];
 //
-//        [self.navigationController presentViewController:alert animated:YES completion:nil];
-//    }
+//     @try {
+//    model.alipayURLScheme = @"alipay2018121762573161";
+//    model.wechatURLScheme = @"wx86e28a9748b03984";
+//    [LLTransportSDK launchTransportSDKFromSourceViewController:self.navigationController configModel:model];
+//     } @catch (NSException *exception) {
+//         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"error" message:exception.description preferredStyle:UIAlertControllerStyleAlert];
+//         UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+//         [alert addAction:sure];
+//
+//         [self.navigationController presentViewController:alert animated:YES completion:nil];
+//     }
 }
 
 - (IBAction)switchEnvirAction:(UISwitch *)sender {
     
-//    [LLTransportSDK switchLLTransportSDKToProduct:sender.on];
+//[LLTransportSDK switchLLTransportSDKToProduct:sender.on];
+//   self.envirState.text = sender.on?@"生产":@"测试";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
