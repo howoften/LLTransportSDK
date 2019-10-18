@@ -10,6 +10,7 @@
 #import "LLTransportLaunchModel.h"
 
 @interface LLTransportSDK : NSObject
+
 + (void)launchTransportSDKFromSourceViewController:(UIViewController *)sourceViewController configModel:(LLTransportLaunchModel *)model;
 
 + (__kindof UINavigationController *)constructTransportSDKRootViewControllerWithConfigModel:(LLTransportLaunchModel *)model;
