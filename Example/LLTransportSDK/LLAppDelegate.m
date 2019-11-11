@@ -21,7 +21,7 @@
     //启动更新检查SDK
     [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"cdde9e585a4ef1e44ab12d89ce15db92"];
     
-    [WXApi registerApp:@"wx86e28a9748b03984" enableMTA:YES];
+    [WXApi registerApp:@"wxaaef671c6bec6acf" universalLink:@"https://lzgj.test.brightcns.cn/weixin"];
     [WXApi startLogByLevel:WXLogLevelNormal logBlock:^(NSString *log) {
         NSLog(@"log : %@", log);
     }];
@@ -73,6 +73,14 @@
 //        return [LLTransportSDK application:app openURL:url options:options];
 //    }
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler
+{
+//    if ([LLTransportSDK canResponseApplicationOpenURL:userActivity.webpageURL]) {
+//           return [LLTransportSDK application:application openURL:userActivity.webpageURL options:nil];
+//       }
+       return YES;
 }
 
 @end

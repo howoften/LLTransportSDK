@@ -1,7 +1,7 @@
 PODS:
   - AlipaySDK-iOS (15.5.9)
-  - IQKeyboardManager (6.4.0)
-  - LLTransportSDK (1.0.0):
+  - IQKeyboardManager (6.5.3)
+  - LLTransportSDK (1.0.9):
     - AlipaySDK-iOS
     - IQKeyboardManager
     - MBProgressHUD
@@ -9,7 +9,7 @@ PODS:
     - WechatOpenSDK
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.0)
-  - WechatOpenSDK (1.8.4)
+  - WechatOpenSDK (1.8.6)
 
 DEPENDENCIES:
   - LLTransportSDK (from `../`)
@@ -28,11 +28,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
-  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
-  LLTransportSDK: 78cfb26256a80ed3740e6cdfdc3387eb5f515df6
+  IQKeyboardManager: c2f901164d56807a35788483584d09fa69192e8e
+  LLTransportSDK: b11d499f56636d37e86372c0ce31a6c2a0095a82
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
-  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
 
 PODFILE CHECKSUM: 071d22a0a5f6ac4cdb9b2e4c46ec1f4c74e7a65c
 

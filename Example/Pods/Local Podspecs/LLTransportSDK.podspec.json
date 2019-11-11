@@ -1,6 +1,6 @@
 {
   "name": "LLTransportSDK",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "summary": "LLTransportSDK provide local QRCode-ride business",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://git.brightcns.cn/Liujiang",
@@ -13,13 +13,12 @@
   },
   "source": {
     "git": "https://github.com/howoften/LLTransportSDK.git",
-    "tag": "1.0.0"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "LLTransportSDK/Classes/**/*",
-  "resources": "LLTransportSDK/Assets/LLTransport.bundle",
+  "vendored_frameworks": "LLTransportSDK/Frameworks/LLTransportSDK.framework",
   "dependencies": {
     "MJRefresh": [
 
@@ -37,8 +36,21 @@
 
     ]
   },
+  "frameworks": [
+    "CFNetwork",
+    "CoreTelephony",
+    "Security",
+    "SystemConfiguration",
+    "MessageUI",
+    "MobileCoreServices",
+    "StoreKit",
+    "QuartzCore",
+    "Foundation",
+    "UIKit"
+  ],
   "pod_target_xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/AlipaySDK-iOS",
-    "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup"
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/AlipaySDK-iOS $(PODS_ROOT)/WechatOpenSDK",
+    "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup",
+    "ENABLE_BITCODE": "NO"
   }
 }
