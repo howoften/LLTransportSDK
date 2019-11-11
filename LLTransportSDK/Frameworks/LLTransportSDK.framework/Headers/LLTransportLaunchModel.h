@@ -12,6 +12,7 @@
 @property (nonatomic, strong)NSString *alipayAppId;
 @property (nonatomic, strong)NSString *alipayURLScheme;
 @property (nonatomic, strong)NSString *wechatAppId;
+@property (nonatomic, strong)NSString *wechatUniversalLink;//支持1.8.6以后API
 @property (nonatomic, strong)NSString *wechatURLScheme;
 @property (nonatomic, strong)NSString *phone;
 @property (nonatomic, strong)NSString *userId;

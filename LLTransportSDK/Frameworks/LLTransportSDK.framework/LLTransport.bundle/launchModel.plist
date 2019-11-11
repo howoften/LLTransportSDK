@@ -30,6 +30,13 @@
 		<key>default</key>
 		<string></string>
 	</dict>
+	<key>wechatUniversalLink</key>
+	<dict>
+		<key>required</key>
+		<false/>
+		<key>default</key>
+		<string></string>
+	</dict>
 	<key>phone</key>
 	<dict>
 		<key>required</key>
